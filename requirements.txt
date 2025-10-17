@@ -1,0 +1,27 @@
+
+# Core ML
+torch
+torch_geometric
+scikit-learn
+pandas
+numpy
+
+# Transformer Models (for ESM)
+transformers
+sentencepiece
+accelerate
+
+# Cheminformatics
+rdkit
+
+# Explainability
+captum
+
+# App & Visualization
+streamlit
+matplotlib
+seaborn
+py3Dmol
+
+# Utilities
+tqdm
