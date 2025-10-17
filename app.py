@@ -1,10 +1,18 @@
-
 import streamlit as st
-from frontend.components import (
-    render_sidebar, render_input_section,
-    render_prediction_section, render_visualization_section
-)
+# The sys.path modification is a robust way to ensure modules are found
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent))
+
+# --- CORRECTED IMPORTS ---
+# We now import directly from each component's specific file.
+# This is more explicit and avoids issues with package initialization.
+from frontend.components.sidebar import render_sidebar
+from frontend.components.input_section import render_input_section
+from frontend.components.prediction_section import render_prediction_section
+from frontend.components.visualization_section import render_visualization_section
 from frontend.utils.session_state import initialize_session_state
+# --- END OF CORRECTION ---
 
 def main():
     """Main function to run the Streamlit app."""
